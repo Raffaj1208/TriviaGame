@@ -3,7 +3,7 @@ body{
 }
 
 main{
-    background-color: rgb(128, 118, 93);
+    background-color: darkgoldenrod;
     height: max-content; width: max-content;
     margin-left: auto; margin-right: auto;
 }

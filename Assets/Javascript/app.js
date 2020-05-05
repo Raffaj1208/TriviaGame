@@ -1,11 +1,12 @@
-$(document).ready(){
+$(document).ready(function(){
 
     //.. Our variables
     let correctAnswers = 0;
     let wrongAnswers = 0;
     let answered = 0;
+    let unAnswered = 0;
     let timer = ;
-    let answers = [];
+    let answers = ["yes", "no","maybe So"];
 
     //.. Our functions
     let start = function{
@@ -18,7 +19,7 @@ $(document).ready(){
     let reset = function{
         correctAnswers = 0;
         timer = ;
-        
+
     }
     //..
 
