@@ -3,8 +3,8 @@ body{
 }
 
 main{
-    background-color: goldenrod;
-    height: 300px; width: 300px;
+    background-color: rgb(128, 118, 93);
+    height: max-content; width: max-content;
     margin-left: auto; margin-right: auto;
 }
 
@@ -12,4 +12,19 @@ section{
     height:150px; width:300px;
     background-color: black;
     margin-left: auto; margin-right: auto;
+}
+header{
+    font-size: xx-large; text-align: center;
+    background-color: goldenrod;
+
+}
+#strtBtn{
+    height: 50px; width: 75px;
+    margin-right: auto; margin-left: auto;
+    text-align: center; font-size: large; font-weight: bold;
+}
+.questions{
+    color:white;
+    text-align: center;
+    font-size: larger;
 }
