@@ -28,3 +28,11 @@ header{
     text-align: center;
     font-size: larger;
 }
+
+#timer{
+    color: black;
+    background-color: yellow;
+    height: 100px; width: 100px;
+    border: solid;
+    text-align: center; font-size: xx-large;
+}

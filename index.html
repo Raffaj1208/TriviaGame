@@ -6,7 +6,6 @@
     <title>Trivia Game</title>
     <link rel="stylesheet" href="Assets/Css/style.css">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-    <script src="Assets/Javascript/app.js"></script>
 </head>
 <body>
     
@@ -15,12 +14,12 @@
         <button id="strtBtn">START</button>
         <section class="questions" id="q1"><p id="question1">This is a question</p>
             <form>
-                <input type="radio">
-                <label>A</label><br>
-                <input type="radio">
-                <label>B</label><br>
-                <input type="radio">
-                <label>C</label><br>
+                <input type="radio" class="answer1" id="q1a1">
+                <label for="q1a1">Potential answer</label><br>
+                <input type="radio" class="answer1" id="q1a2">
+                <label for="q1a2" id="b">Potential Answer</label><br>
+                <input type="radio" class="answer1" id="q1a3">
+                <label id="c">Potential Answer</label><br>
                 <input type="submit" value="Submit">
               </form>
                </section><br>
@@ -68,7 +67,10 @@
                 <input type="submit" value="Submit">
               </form>
               </section><br>
-        
+
+              <section><p id="timer"></p></section>
+    
+              <script src="Assets/Javascript/app.js"></script>
     </main>
     
 </body>
