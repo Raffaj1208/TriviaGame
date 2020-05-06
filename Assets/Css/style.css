@@ -19,7 +19,7 @@ header{
 
 }
 #strtBtn{
-    height: 50px; width: 75px;
+    height: 70px; width: 95px;
     margin-right: auto; margin-left: auto;
     text-align: center; font-size: large; font-weight: bold;
 }
@@ -35,4 +35,18 @@ header{
     height: 100px; width: 100px;
     border: solid;
     text-align: center; font-size: xx-large;
+}
+#q1{
+    background-image: url(../Images/toyStory.jpg);
+}
+
+#q2{
+    background-image: url(../Images/avengers3.jpg);
+}
+
+#q3{
+    background-image: url(../Images/starwars1.jpg);
+}
+#q4{
+    background-image: url(../Images/lion-king-review.jpg);
 }
