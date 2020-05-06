@@ -5,11 +5,9 @@ $(document).ready(function(){
     let wrongAnswers = 0;
     let answered = 0;
     let unAnswered = 0;
-    let answers = ["yes", "no","maybe So"];
-
-
+    let answerOne = ["yes", "no","maybe So"];
     //..
-
+    $("")
 
 
 }
