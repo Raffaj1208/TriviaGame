@@ -17,10 +17,23 @@
     $("#strtBtn").show();
     $("section").hide();
 
+    //..
+    //..
+    function results() {
+        $("main").hide();
+        $("aside").show();
+        $("#answered").html("Answered:" + answered);
+        $("#unAnswered").html("Unanswered:" + unAnswered);
+        $("#wrongAnswers").html("Wrong:" + wrongAnswers);
+        $("#correctAnswers").html("Correct:" + correctAnswers);
+    }
+
+
     //.. 
     function timeIt() {
             $("#timer").html(timeOut - counter);
             if (timeOut === counter){
+                results();
                 clearInterval(interval)
             } else {
                 counter++;
@@ -31,33 +44,30 @@
     $("#strtBtn").on("click", function(){
         $("section").show();
         let interval = setInterval(timeIt, 1000);   
-    //..This is for block one
+    //Question 1
     $("#question1").html(questionOne);
     $("#oneOne").html(answersOne[0]);
     $("#oneTwo").html(answersOne[1]);
     $("#oneThree").html(answersOne[2]);
-    //.. Block 2
+    //Question 2
     $("#question2").html(questionTwo);
     $("#twoOne").html(answersTwo[0]);
     $("#twoTwo").html(answersTwo[1]);
     $("#twoThree").html(answersTwo[2]);
-    //.. Block 3
+    //Question 3
     $("#question3").html(questionThree);
     $("#threeOne").html(answersThree[0]);
     $("#threeTwo").html(answersThree[1]);
     $("#threeThree").html(answersThree[2]);
-    //.. Block 4
+    //Question 4
     $("#question4").html(questionFour);
     $("#fourOne").html(answersFour[0]);
     $("#fourTwo").html(answersFour[1]);
     $("#fourThree").html(answersFour[2]);
  
     });
+
     //.. Submit button
     $("#submit").on("click", function(){
-        $("main").hide();
-        $("#answered").html("Answered:" + answered);
-        $("#unAnswered").html("Unanswered:" + unAnswered);
-        $("#wrongAnswers").html("Wrong:" + wrongAnswers);
-        $("#correctAnswers").html("Correct:" + correctAnswers);
+        results();
     });
