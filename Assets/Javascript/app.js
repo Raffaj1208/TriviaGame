@@ -18,10 +18,20 @@
     $("section").hide();
 
     //..
-    function answering(){
-        
+    function checked(){
+        let a1 = document.getElementById("a1").checked;
+        let b1 = document.getElementById("a2").checked;
+        let c1 = document.getElementById("a3").checked;
+        if (a1 == true && b1 == false && c1 == false){
+            correctAnswers++;
+            results();
+        }
     }
-    
+
+    // 
+    function unchecked(){
+
+    }
     //..
     function results() {
         $("main").hide();
@@ -73,5 +83,5 @@
 
     //.. Submit button
     $("#submit").on("click", function(){
-        results();
+        checked();
     });
