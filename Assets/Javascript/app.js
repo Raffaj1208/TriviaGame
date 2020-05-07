@@ -18,6 +18,10 @@
     $("section").hide();
 
     //..
+    function answering(){
+
+    }
+    
     //..
     function results() {
         $("main").hide();

@@ -10,7 +10,7 @@ main{
 }
 
 section{
-    height:150px; width:300px;
+    height:300px; widows: 450px;
     color: white;
     margin-left: auto; margin-right: auto;
 }
@@ -20,7 +20,7 @@ header{
 
 }
 #strtBtn{
-    height: 70px; width: 95px;
+    height: 150px; width: 225px;
     margin-right: auto; margin-left: auto;
     text-align: center; font-size: large; font-weight: bold;
 }
@@ -32,26 +32,27 @@ header{
 }
 
 #timer{
-    color: black;
-    background-color: darkgoldenrod;
+    color: greenyellow;
+    background-color: black;
     height: 100px; width: 100px;
     border: solid;
     text-align: center; font-size: xx-large;
+    margin-left: auto; margin-right: auto;
 }
+
 #q1{
-    background-image: url(../Images/toyStory.jpg);
-    color: darkslategrey;
+    background-image: url();
 }
 
 #q2{
-    background-image: url(../Images/avengers3.jpg);
+    background-image: url();
 }
 
 #q3{
-    background-image: url(../Images/starwars1.jpg);
+    background-image: url();
 }
 #q4{
-    background-image: url(../Images/lion-king-review.jpg);
+    background-image: url();
 }
 
 aside{
@@ -60,4 +61,9 @@ aside{
     color: black;
     border: black, solid;
     margin-left: auto; margin-right: auto;
+}
+
+#submit{
+    margin-right: auto; margin-left: auto;
+    height: 50px; width: 75px;
 }
