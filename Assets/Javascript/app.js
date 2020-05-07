@@ -3,14 +3,14 @@
     let wrongAnswers = 0;
     let answered = 0;
     let unAnswered = 0;
-    let answersOne = ["5", "3","4"];
-    let answersTwo = ["1995", "1987", "2019"];
-    let answersThree = ["Qui-gon", "Maul", "Anakin"];
-    let answersFour = ["Zira", "Scar", "Kovu"];
-    let questionOne = "How many Toy Story films have been released?";
-    let questionTwo = "The Movie, Avengers Endgame, was released in the year?";
-    let questionThree = "Obi-wan's mentor in The Phantom Menace, is called?";
-    let questionFour = "What is the name of the antagonist in the disney film, The Lion King?";
+    let answersOne = ["..", "..",".."];
+    let answersTwo = ["..", "..", ".."];
+    let answersThree = ["..", "..", ".."];
+    let answersFour = [".", ".", ".."];
+    let questionOne = "?";
+    let questionTwo = "?";
+    let questionThree = "?";
+    let questionFour = "?";
     let counter = 0;
     let timeOut = 65;
     //..
@@ -19,7 +19,7 @@
 
     //..
     function answering(){
-
+        
     }
     
     //..
