@@ -56,7 +56,8 @@ header{
 
 aside{
     height: 200px; width: 200px;
-    background-color: goldenrod;
+    font-size: xx-large; font-weight: bolder;
     color: black;
     border: black, solid;
+    margin-left: auto; margin-right: auto;
 }

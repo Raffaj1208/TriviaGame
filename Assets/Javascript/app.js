@@ -55,6 +55,7 @@
     });
     //.. Submit button
     $("#submit").on("click", function(){
+        $("main").hide();
         $("#answered").html("Answered:" + answered);
         $("#unAnswered").html("Unanswered:" + unAnswered);
         $("#wrongAnswers").html("Wrong:" + wrongAnswers);
