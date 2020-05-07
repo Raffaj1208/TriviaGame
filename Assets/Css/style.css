@@ -11,7 +11,7 @@ main{
 
 section{
     height:200px; width: 300px;
-    color: white;
+    color: white; background-color: black;
     margin-left: auto; margin-right: auto;
 }
 header{
