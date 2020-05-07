@@ -1,5 +1,6 @@
 body{
     background-color: aqua;
+    color: black;
 }
 
 main{
@@ -10,7 +11,7 @@ main{
 
 section{
     height:150px; width:300px;
-    background-color: black;
+    color: white;
     margin-left: auto; margin-right: auto;
 }
 header{
@@ -24,20 +25,22 @@ header{
     text-align: center; font-size: large; font-weight: bold;
 }
 .questions{
-    color:white;
+    color:turquoise;
     text-align: center;
     font-size: larger;
+    font-weight: bolder;
 }
 
 #timer{
     color: black;
-    background-color: yellow;
+    background-color: darkgoldenrod;
     height: 100px; width: 100px;
     border: solid;
     text-align: center; font-size: xx-large;
 }
 #q1{
     background-image: url(../Images/toyStory.jpg);
+    color: darkslategrey;
 }
 
 #q2{
@@ -49,4 +52,11 @@ header{
 }
 #q4{
     background-image: url(../Images/lion-king-review.jpg);
+}
+
+aside{
+    height: 200px; width: 200px;
+    background-color: goldenrod;
+    color: black;
+    border: black, solid;
 }
