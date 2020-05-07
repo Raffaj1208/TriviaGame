@@ -1,7 +1,6 @@
     //.. Our variables
     let correctAnswers = 0;
     let wrongAnswers = 0;
-    let answered = 0;
     let unAnswered = 0;
     let answersOne = ["Mcdonalds", "Jack in the Box","Carl's Jr"];
     let answersTwo = ["1767", "1752", "1776"];
@@ -35,11 +34,12 @@
         // Question 1
         if (a1 == true && b1 == false && c1 == false){
             correctAnswers++;
-            answered++;
             results();
-        } else if (a1 == false){
+        } else if (a1 == false && b1 == true){
             wrongAnswers++;
-            answered++;
+            results();
+        } else if (a1 == false && c1 == true){
+            wrongAnswers++;
             results();
         } else if (a1 == false && b1 == false && c1 == false){
             unAnswered++;
@@ -49,12 +49,13 @@
 
         // Question 2
         if (a2 == false && b2 == false && c2 ==true){
-            answered++;
             correctAnswers++;
             results();
-        } else if (c2 == false){
+        } else if (c2 == false && a2 == true){
             wrongAnswers++;
-            answered++;
+            results();
+        } else if (c2 == false && b2 == true){
+            wrongAnswers++;
             results();
         } else if (a2 == false && b2 == false && c2 == false){
             wrongAnswers++;
@@ -64,11 +65,12 @@
 
         // Question 3
         if (a3 == false && b3 == true && c3 == false){
-            answered++;
             correctAnswers++;
             results();
-        } else if ( b3 == false){
-            answered++;
+        } else if ( b3 == false && a3 == true){
+            wrongAnswers++;
+            results();
+        } else if (b3 == false && c3 == true){
             wrongAnswers++;
             results();
         } else if (a3 == false && b3 == false && c3 == false){
@@ -80,11 +82,12 @@
         // Question 4
         if (a4 == true && b4 == false && c4 == false){
             correctAnswers++;
-            answered++;
             results();
-        } else if (a4 == false){
+        } else if (a4 == false && b4 == true){
             wrongAnswers++;
-            answered++;
+            results();
+        } else if (a4 == false && c4 == true){
+            wrongAnswers++;
             results();
         } else if (a4 == false && b4 == false && c4 == false){
             wrongAnswers++;
@@ -93,11 +96,14 @@
         }
     }
 
+    function stop(){
+
+    }
+
     //..
     function results() {
         $("main").hide();
         $("aside").show();
-        $("#answered").html("Answered:" + answered);
         $("#unAnswered").html("Unanswered:" + unAnswered);
         $("#wrongAnswers").html("Wrong:" + wrongAnswers);
         $("#correctAnswers").html("Correct:" + correctAnswers);
@@ -108,7 +114,7 @@
     function timeIt() {
             $("#timer").html(timeOut - counter);
             if (timeOut === counter){
-                checked();
+                results();
                 clearInterval(interval)
             } else {
                 counter++;
