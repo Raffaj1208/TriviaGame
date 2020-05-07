@@ -1,17 +1,17 @@
 body{
-    background-color: aqua;
+    background-image: url(../Images/webb.png);
     color: black;
 }
 
 main{
-    background-color: darkgoldenrod;
+    background-image: url(../Images/vintage-wallpaper.png);
     height: max-content; width: max-content;
     margin-left: auto; margin-right: auto;
 }
 
 section{
     height:200px; width: 300px;
-    color: white; background-color: black;
+    color: white;
     margin-left: auto; margin-right: auto;
 }
 header{
@@ -25,7 +25,8 @@ header{
     text-align: center; font-size: large; font-weight: bold;
 }
 .questions{
-    color:turquoise;
+    background-image: url(../Images/5-dots.png);
+    color:white;
     text-align: center;
     font-size: larger;
     font-weight: bolder;
@@ -38,21 +39,6 @@ header{
     border: solid;
     text-align: center; font-size: xx-large;
     margin-left: auto; margin-right: auto;
-}
-
-#q1{
-    background-image: url();
-}
-
-#q2{
-    background-image: url();
-}
-
-#q3{
-    background-image: url();
-}
-#q4{
-    background-image: url();
 }
 
 aside{

@@ -3,14 +3,14 @@
     let wrongAnswers = 0;
     let answered = 0;
     let unAnswered = 0;
-    let answersOne = ["..", "..",".."];
-    let answersTwo = ["..", "..", ".."];
-    let answersThree = ["..", "..", ".."];
-    let answersFour = [".", ".", ".."];
-    let questionOne = "?";
-    let questionTwo = "?";
-    let questionThree = "?";
-    let questionFour = "?";
+    let answersOne = ["Mcdonalds", "Jack in the Box","Carl's Jr"];
+    let answersTwo = ["1767", "1752", "1776"];
+    let answersThree = ["Ravens and Seahawks", "Steelers and Patriots", "Giants and Packers"];
+    let answersFour = ["Bill Gates", "Steve Jobs", "Mark Zuckerberg"];
+    let questionOne = "What franchise famously uses the slogan, 'Im Loving It!'?";
+    let questionTwo = "In what year was the declaration of independence signed?";
+    let questionThree = "Which two NFL teams, have the most won Superbowls?";
+    let questionFour = "This man is famously known for being a founder for Microsoft?";
     let counter = 0;
     let timeOut = 65;
     //..
