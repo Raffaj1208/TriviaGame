@@ -55,4 +55,8 @@
     });
     //.. Submit button
     $("#submit").on("click", function(){
+        $("#answered").html("Answered:" + answered);
+        $("#unAnswered").html("Unanswered:" + unAnswered);
+        $("#wrongAnswers").html("Wrong:" + wrongAnswers);
+        $("#correctAnswers").html("Correct:" + correctAnswers);
     });
