@@ -16,6 +16,7 @@
     //..
     $("#strtBtn").show();
     $("section").hide();
+    $("#submit").hide();
 
     //..
     function checked(){
@@ -110,6 +111,7 @@
     //.. Click the Start button to start the game
     $("#strtBtn").on("click", function(){
         $("section").show();
+        $("#submit").show();
          let interval = setInterval(timeIt, 1000)
 
          function timeIt() {
