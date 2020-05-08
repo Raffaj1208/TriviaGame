@@ -112,6 +112,7 @@
     $("#strtBtn").on("click", function(){
         $("section").show();
         $("#submit").show();
+        $("#strtBtn").hide();
          let interval = setInterval(timeIt, 1000)
 
          function timeIt() {
