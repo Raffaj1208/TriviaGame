@@ -11,7 +11,7 @@
     let questionThree = "Which two NFL teams, have the most won Superbowls?";
     let questionFour = "This man is famously known for being a founder for Microsoft?";
     let counter = 0;
-    let timeOut = 35;
+    let timeOut = 15;
 
     //..
     $("#strtBtn").show();
