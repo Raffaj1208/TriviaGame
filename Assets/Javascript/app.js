@@ -11,7 +11,9 @@
     let questionThree = "Which two NFL teams, have the most won Superbowls?";
     let questionFour = "This man is famously known for being a founder for Microsoft?";
     let counter = 0;
-    let timeOut = 65;
+    let timeOut = 8;
+    let interval = setInterval(timeIt, 1000);
+
     //..
     $("#strtBtn").show();
     $("section").hide();
@@ -96,10 +98,6 @@
         }
     }
 
-    function stop(){
-
-    }
-
     //..
     function results() {
         $("main").hide();
@@ -115,6 +113,7 @@
             $("#timer").html(timeOut - counter);
             if (timeOut === counter){
                 results();
+                checked();
                 clearInterval(interval)
             } else {
                 counter++;
@@ -124,7 +123,8 @@
     //.. Click the Start button to start the game
     $("#strtBtn").on("click", function(){
         $("section").show();
-        let interval = setInterval(timeIt, 1000);   
+        timeIt();
+           
     //Question 1
     $("#question1").html(questionOne);
     $("#oneOne").html(answersOne[0]);
