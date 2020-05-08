@@ -11,8 +11,7 @@
     let questionThree = "Which two NFL teams, have the most won Superbowls?";
     let questionFour = "This man is famously known for being a founder for Microsoft?";
     let counter = 0;
-    let timeOut = 8;
-    let interval = setInterval(timeIt, 1000);
+    let timeOut = 35;
 
     //..
     $("#strtBtn").show();
@@ -36,66 +35,67 @@
         // Question 1
         if (a1 == true && b1 == false && c1 == false){
             correctAnswers++;
-            results();
+            
         } else if (a1 == false && b1 == true){
             wrongAnswers++;
-            results();
+            
         } else if (a1 == false && c1 == true){
             wrongAnswers++;
-            results();
+            
         } else if (a1 == false && b1 == false && c1 == false){
             unAnswered++;
             wrongAnswers++;
-            results();
+            
         }
 
         // Question 2
         if (a2 == false && b2 == false && c2 ==true){
             correctAnswers++;
-            results();
+            
         } else if (c2 == false && a2 == true){
             wrongAnswers++;
-            results();
+            
         } else if (c2 == false && b2 == true){
             wrongAnswers++;
-            results();
+            
         } else if (a2 == false && b2 == false && c2 == false){
             wrongAnswers++;
             unAnswered++;
-            results();
+            
         }
 
         // Question 3
         if (a3 == false && b3 == true && c3 == false){
             correctAnswers++;
-            results();
+            
         } else if ( b3 == false && a3 == true){
             wrongAnswers++;
-            results();
+            
         } else if (b3 == false && c3 == true){
             wrongAnswers++;
-            results();
+            
         } else if (a3 == false && b3 == false && c3 == false){
             unAnswered++;
             wrongAnswers++;
-            results();
+            
         }
         
         // Question 4
         if (a4 == true && b4 == false && c4 == false){
             correctAnswers++;
-            results();
+            
         } else if (a4 == false && b4 == true){
             wrongAnswers++;
-            results();
+            
         } else if (a4 == false && c4 == true){
             wrongAnswers++;
-            results();
+            
         } else if (a4 == false && b4 == false && c4 == false){
             wrongAnswers++;
             unAnswered++;
-            results();
+            
         }
+        results();
     }
 
     //..
@@ -107,24 +107,21 @@
         $("#correctAnswers").html("Correct:" + correctAnswers);
     }
 
+    //.. Click the Start button to start the game
+    $("#strtBtn").on("click", function(){
+        $("section").show();
+         let interval = setInterval(timeIt, 1000)
 
-    //.. 
-    function timeIt() {
-            $("#timer").html(timeOut - counter);
+         function timeIt() {
+            $("#timer").html(timeOut - counter)
             if (timeOut === counter){
-                results();
+                clearInterval(interval);
                 checked();
-                clearInterval(interval)
             } else {
                 counter++;
             }
     }
-
-    //.. Click the Start button to start the game
-    $("#strtBtn").on("click", function(){
-        $("section").show();
-        timeIt();
-           
+          
     //Question 1
     $("#question1").html(questionOne);
     $("#oneOne").html(answersOne[0]);
@@ -145,10 +142,20 @@
     $("#fourOne").html(answersFour[0]);
     $("#fourTwo").html(answersFour[1]);
     $("#fourThree").html(answersFour[2]);
+
+        //.. Submit button
+        $("#submit").on("click", function(){
+            if (timeOut > counter){
+                clearInterval(interval);
+                checked();
+            } else if (timeOut < counter){
+                clearInterval(interval);
+                checked();
+            }
+          
+            
+        });
+
  
     });
 
-    //.. Submit button
-    $("#submit").on("click", function(){
-        checked();
-    });
