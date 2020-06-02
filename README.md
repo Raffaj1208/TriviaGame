@@ -10,3 +10,5 @@ You have 15 seconds to answer all the questions
 Any questions you arent able to answer will be marked wrong and appear as unanswered on your final score.
 
 If you finish before the timer, click the submit button and see how you did
+
+https://raffaj1208.github.io/TriviaGame/
